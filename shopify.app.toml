@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "simpleapp"
+client_id = "2b0bf4dd4fbaa84eeb4a9cd4e4ab857d"
+application_url = "https://lcd-jeremy-millennium-batch.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://lcd-jeremy-millennium-batch.trycloudflare.com/auth/callback",
+  "https://lcd-jeremy-millennium-batch.trycloudflare.com/auth/shopify/callback",
+  "https://lcd-jeremy-millennium-batch.trycloudflare.com/api/auth/callback",
+  "https://lcd-jeremy-millennium-batch.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "zamirziya.myshopify.com"
